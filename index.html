@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent A Car</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="yellow-box"></div>
+    <div class="container">
+        <h3>Search for a rental car:</h3>
+        <p id="info">Pick up location</p>
+        <input list="cities" placeholder="City, airport, region, district..." id="picker">
+        <div class="small-box">
+            <label>
+                <input type="checkbox">Deliver the car somewhere else
+                <span class="checkmark"></span>
+            </label>
+        </div>
+        <form>
+            <div class="left-side">
+                <span>Date of pickup</span>
+                <input type="date" placeholder="Sat 9 Dec 2023">
+                <input type="time">
+            </div>
+            <div class="right-side">
+                <span>Date of delivery</span>
+                <input type="date" placeholder="Sun 10 Dec 2023">
+                <input type="time">
+            </div>
+        </form>
+        <div class="small-box-2">
+            <input type="checkbox"><span>The driver's age between 30 and 65? ⓘ</span>
+        </div>
+        <p class="advantages">✓ No credit card fees</p>
+        <p class="advantages">✓ No change fees</p>
+        <p class="advantages">✓ Price match guarantee</p>
+        <button>SEARCH</button>
+    </div>
+    <datalist id="cities">
+        <option value="İstanbul"></option>
+        <option value="Ankara"></option>
+        <option value="İzmir"></option>
+        <option value="Çanakkale"></option>
+        <option value="Denizli"></option>
+        <option value="Aydın"></option>
+        <option value="Eskişehir"></option>
+        <option value="Bursa"></option>
+        <option value="Antalya"></option>
+        <option value="Adana"></option>
+    </datalist>
+    <div class="orange-box"></div>
+</body>
+</html>

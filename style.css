@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f3e3;
+}
+
+.container {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 15px;
+    z-index: 2;
+    background-color: #f3f3e3;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.4);
+}
+
+h3 {
+    font-size: 25px;
+    padding: 15px;
+    color: #243264;
+}
+
+#info {
+    font-size: 12px;
+    color: #243264;
+    font-weight: bold;
+}
+
+#picker {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #8D99C0;
+}
+
+::placeholder {
+    color: #243264;
+    font-weight: bold;
+}
+
+.yellow-box {
+    background-color: #FAB564;
+    width: 45%;
+    height: 300px;
+    z-index: 0;
+    border-radius: 25px;
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.4);
+}
+
+.orange-box {
+    background-color: #FC6C4C;
+    width: 25%;
+    height: 200px;
+    z-index: 0;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 160px;
+    right: 10px;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 300px){
+    .yellow-box {
+        position: absolute;
+        left: 10px;
+        top: 120px;
+    }
+
+    .orange-box {
+        position: absolute;
+        right: 10px;
+        bottom: 130px;
+    }
+}
+
+@media screen and (max-width: 430px) and (min-width: 300px) {
+    .yellow-box {
+        position: absolute;
+        left: 20px;
+        top: 140px;
+    }
+
+    .orange-box {
+        position: absolute;
+        right: 10px;
+        bottom: 150px;
+    }
+}
+
+.small-box label {
+    color: #243264;
+    font-weight: 600;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 20px;
+}
+
+.small-box label input {
+    opacity: 1;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 5px;
+    vertical-align: -1px;
+    border-radius: 0;
+    opacity: 0.5;
+}
+
+.small-box label input:hover {
+    opacity: 1;
+}
+
+.small-box label input:checked {
+    opacity: 1;
+    color: #243264;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0px;
+}
+
+.advantages {
+    margin: 5px 0px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #243264;
+}
+
+.small-box-2 {
+    color: #243264;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.small-box-2 span {
+    margin-left: 5px;
+    vertical-align: 1px;
+}
+
+.left-side{
+    width: 50%;
+}
+
+.right-side {
+    width: 50%;
+    margin-left: 2px;
+}
+
+.left-side span {
+    color: #243264;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 5px 0px;
+}
+
+.left-side input {
+    width: 100%;
+    height: 40px;
+    border: solid 1px #8D99C0;
+    color: #243264;
+}
+
+.right-side span {
+    color: #243264;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 5px 0px;
+}
+
+.right-side input {
+    width: 100%;
+    height: 40px;
+    border: solid 1px #8D99C0;
+    color: #243264;
+}
+
+input[type="date"] {
+    background-color: #F3F3E3;
+    padding: 10px;
+}
+
+input[type="time"] {
+    background-color: #F3F3E3;
+    padding: 10px;
+}
+
+button {
+    width: 90%;
+    height: 50px;
+    background-color: #FC6C4C;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    color: #F3F3E3;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 10px auto;
+    cursor: pointer;
+}
